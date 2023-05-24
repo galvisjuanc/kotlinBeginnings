@@ -35,5 +35,19 @@ fun main(args: Array<String>) {
     println(nombreEspacio)
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    println("Program arguments: ${args.joinToString()}\n")
+
+    //estructuras de control if else
+    val nombremujer = "Ama"
+    if (nombremujer.isNotEmpty()) println("El largo de nuestra variable nombremaria es ${nombremujer.length}") else
+        println("Error, la variable está vacía")
+
+    val mensajeTexto : String = if (nombremujer.length > 4) {
+        "Tu nombre es largo!"
+    } else if (nombremujer.isEmpty()) {
+        "Nombre está vacio"
+    } else {
+        "Tienes un nombre corto"
+    }
+    println(mensajeTexto)
 }
