@@ -38,7 +38,7 @@ fun main(args: Array<String>) {
     println("Program arguments: ${args.joinToString()}\n")
 
     //estructuras de control if else
-    val nombremujer = "Ama"
+    val nombremujer = "Jotica"
     if (nombremujer.isNotEmpty()) println("El largo de nuestra variable nombremaria es ${nombremujer.length}") else
         println("Error, la variable está vacía")
 
@@ -50,4 +50,29 @@ fun main(args: Array<String>) {
         "Tienes un nombre corto"
     }
     println(mensajeTexto)
+
+    // estructura when
+    val nombreColor = "Carmesi"
+
+    when (nombreColor) {
+        "Amarillo" -> println("El amarillo es el color de la alegría")
+        "Rojo", "Carmesi" -> println("El rojo simboliza la pasión")
+        else -> println("Error. No tengo información de ese color")
+    }
+
+    val code = 550
+    when (code) {
+        in 200..299 -> println("Todo ha ido bien")
+        in 400..500 -> println("Algo ha fallado")
+        else -> println("Codigo desconocido")
+    }
+
+    val tallaDeZapatos = 42
+    val mensajeimportaten = when(tallaDeZapatos) {
+        41,43 -> "Tenemos disponible"
+        42,44 -> "Casi no nos quedan"
+        45 -> "Lo siento no tenemos disponibles"
+        else -> "Estos zapatos vienen en tallas del 41 a la 45"
+    }
+    println(mensajeimportaten)
 }
