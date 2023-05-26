@@ -1,3 +1,5 @@
+package loops
+
 fun main(args: Array<String>) {
     var contador = 10;
     while (contador > 0 ) {
@@ -9,5 +11,11 @@ fun main(args: Array<String>) {
         println("Generando número aleatorio")
         val numeroAleatorio = (0..100).random()
         println("El numero generado es $numeroAleatorio")
-    } while(numeroAleatorio > 10);
+    } while(numeroAleatorio > 30);
+
+    println("")
+    val listaDeFrutas = listOf("Manzana", "Pera", "Frambuesa", "Durazno")
+    for (fruta in listaDeFrutas) {
+        println("Hoy voy a comerme una fruta llamada $fruta")
+    }
 }
