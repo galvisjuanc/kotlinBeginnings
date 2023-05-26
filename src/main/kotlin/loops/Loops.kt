@@ -15,7 +15,9 @@ fun main(args: Array<String>) {
 
     println("")
     val listaDeFrutas = listOf("Manzana", "Pera", "Frambuesa", "Durazno")
-    for (fruta in listaDeFrutas) {
-        println("Hoy voy a comerme una fruta llamada $fruta")
-    }
+    for (fruta in listaDeFrutas) println("Hoy voy a comerme una fruta llamada $fruta")
+
+    println("")
+    listaDeFrutas.forEach {fruta -> println("Mañana voy a comerme cada fruta llamada $fruta")}
+
 }
