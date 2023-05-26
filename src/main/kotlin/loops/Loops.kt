@@ -14,10 +14,18 @@ fun main(args: Array<String>) {
     } while(numeroAleatorio > 30);
 
     println("")
-    val listaDeFrutas = listOf("Manzana", "Pera", "Frambuesa", "Durazno")
+    val listaDeFrutas = listOf("Manzana", "Pera", "Frambuesa", "Durazno", "Limon", "Uva", "Ciruela", "Banano")
     for (fruta in listaDeFrutas) println("Hoy voy a comerme una fruta llamada $fruta")
 
     println("")
     listaDeFrutas.forEach {fruta -> println("Mañana voy a comerme cada fruta llamada $fruta")}
 
+    //convertir la lista a map
+    println("")
+    val caracteresDeFruta: List<Int> = listaDeFrutas.map { fruta -> fruta.length }
+    println(caracteresDeFruta)
+
+    println("")
+    val listaFiltrada = caracteresDeFruta.filter { largoDeFruta -> largoDeFruta > 5 }
+    print(listaFiltrada)
 }
