@@ -1,0 +1,81 @@
+package basics
+
+const val PI = 3.1416
+
+fun main(args: Array<String>) {
+    println("Hello World!")
+
+    var dinero = 10       // var dinero : Int = 10
+    println(dinero)
+    dinero = 5
+    println(dinero)
+
+    val nombre = "Maria"    // val nombre : String = "Maria"
+    println(nombre)
+
+    println(PI)
+
+    val booleano = true             // val boolean: Boolean = true
+    val numeroLargo = 3L            // val numeroLargo : Long = 3L
+    val valordouble = 2.7182           // val valordouble : Double = 2.7182
+    val flotante = 1.1f                // val
+
+    print(booleano)
+    println(numeroLargo)
+    print(valordouble)
+    println(flotante)
+
+    val primerValor = 20
+    val segundoValor = 10
+    val tercerValor = primerValor.minus(segundoValor)
+    println(tercerValor)
+
+    val apellido = "Galvis"
+    val nombreCompleto = "Juan"
+    val nombretotal = nombreCompleto + apellido
+    val nombreEspacio = "$nombreCompleto $apellido"
+    println(nombretotal)
+    println(nombreEspacio)
+    // Try adding program arguments via Run/Debug configuration.
+    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
+    println("Program arguments: ${args.joinToString()}\n")
+
+    //estructuras de control if else
+    val nombremujer = "Jotica"
+    if (nombremujer.isNotEmpty()) println("El largo de nuestra variable nombremaria es ${nombremujer.length}") else
+        println("Error, la variable está vacía")
+
+    val mensajeTexto : String = if (nombremujer.length > 4) {
+        "Tu nombre es largo!"
+    } else if (nombremujer.isEmpty()) {
+        "Nombre está vacio"
+    } else {
+        "Tienes un nombre corto"
+    }
+    println(mensajeTexto)
+
+    // estructura when
+    val nombreColor = "Carmesi"
+
+    when (nombreColor) {
+        "Amarillo" -> println("El amarillo es el color de la alegría")
+        "Rojo", "Carmesi" -> println("El rojo simboliza la pasión")
+        else -> println("Error. No tengo información de ese color")
+    }
+
+    val code = 550
+    when (code) {
+        in 200..299 -> println("Todo ha ido bien")
+        in 400..500 -> println("Algo ha fallado")
+        else -> println("Codigo desconocido")
+    }
+
+    val tallaDeZapatos = 42
+    val mensajeimportaten = when(tallaDeZapatos) {
+        41,43 -> "Tenemos disponible"
+        42,44 -> "Casi no nos quedan"
+        45 -> "Lo siento no tenemos disponibles"
+        else -> "Estos zapatos vienen en tallas del 41 a la 45"
+    }
+    println(mensajeimportaten)
+}

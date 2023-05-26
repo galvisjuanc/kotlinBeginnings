@@ -1,1 +1,1 @@
-C:\Users\galvi\Documents\kotlinProjects\build\classes\kotlin\main\MainKt.class
+C:\Users\galvi\Documents\kotlinProjects\build\classes\kotlin\main\basics\MainKt.class;C:\Users\galvi\Documents\kotlinProjects\build\classes\kotlin\main\loops\LoopsKt.class
