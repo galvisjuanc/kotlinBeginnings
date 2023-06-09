@@ -22,6 +22,10 @@ fun main(args: Array<String>) {
     edadSuperheroesMutable["Storm"] = 30
     println(edadSuperheroesMutable)
 
+    edadSuperheroesMutable["Dr Strange"] = 30
+    println(edadSuperheroesMutable)
+
+
     val edadIronman = edadDeSuperheroes["Ironman"]
     println(edadIronman)
 
